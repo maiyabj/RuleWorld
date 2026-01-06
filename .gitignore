@@ -1,0 +1,156 @@
+# ====================
+# macOS
+# ====================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ====================
+# MagicWorld (iOS/Xcode)
+# ====================
+
+## User settings
+MagicWorld/**/xcuserdata/
+MagicWorld/**/*.xcuserdatad
+
+## Compatibility with Xcode 8 and earlier
+MagicWorld/**/*.xcscmblueprint
+MagicWorld/**/*.xccheckout
+
+## Compatibility with Xcode 3 and earlier
+MagicWorld/**/*.mode1v3
+MagicWorld/**/*.mode2v3
+MagicWorld/**/*.perspectivev3
+MagicWorld/**/*.pbxuser
+
+## Obj-C/Swift specific
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Build products
+MagicWorld/**/build/
+MagicWorld/**/DerivedData/
+
+# CocoaPods
+MagicWorld/Pods/
+MagicWorld/Podfile.lock
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts
+
+# Swift Package Manager
+.build/
+.swiftpm/
+MagicWorld/**/.swiftpm/
+
+# Accio dependency management
+Dependencies/
+.accio/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+fastlane/test_output/
+fastlane/readme.md
+
+# ====================
+# magic_world_module (Flutter/Dart)
+# ====================
+
+# Miscellaneous
+magic_world_module/*.class
+magic_world_module/*.log
+magic_world_module/*.pyc
+magic_world_module/*.swp
+magic_world_module/.DS_Store
+magic_world_module/.atom/
+magic_world_module/.buildlog/
+magic_world_module/.history
+magic_world_module/.svn/
+magic_world_module/migrate_working_dir/
+
+# IntelliJ related
+magic_world_module/.idea/
+magic_world_module/*.iml
+magic_world_module/*.ipr
+magic_world_module/*.iws
+magic_world_module/.idea_modules/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+magic_world_module/.vscode/
+
+# Flutter/Dart/Pub related
+magic_world_module/.dart_tool/
+magic_world_module/.flutter-plugins
+magic_world_module/.flutter-plugins-dependencies
+magic_world_module/.packages
+magic_world_module/.pub-cache/
+magic_world_module/.pub/
+magic_world_module/build/
+magic_world_module/pubspec.lock
+
+# Symbolication related
+magic_world_module/app.*.symbols
+
+# Android related
+magic_world_module/.android/
+magic_world_module/**/android/**/gradle-wrapper.jar
+magic_world_module/**/android/.gradle
+magic_world_module/**/android/captures/
+magic_world_module/**/android/gradlew
+magic_world_module/**/android/gradlew.bat
+magic_world_module/**/android/local.properties
+magic_world_module/**/android/**/GeneratedPluginRegistrant.java
+magic_world_module/**/android/key.properties
+magic_world_module/**/android/.idea/
+magic_world_module/**/android/**/*.iml
+
+# iOS/XCode related
+magic_world_module/.ios/
+magic_world_module/**/ios/**/*.mode1v3
+magic_world_module/**/ios/**/*.mode2v3
+magic_world_module/**/ios/**/*.moved-aside
+magic_world_module/**/ios/**/*.pbxuser
+magic_world_module/**/ios/**/*.perspectivev3
+magic_world_module/**/ios/**/*sync/
+magic_world_module/**/ios/**/.sconsign.dblite
+magic_world_module/**/ios/**/.tags*
+magic_world_module/**/ios/**/.vagrant/
+magic_world_module/**/ios/**/DerivedData/
+magic_world_module/**/ios/**/Icon?
+magic_world_module/**/ios/**/Pods/
+magic_world_module/**/ios/**/.symlinks/
+magic_world_module/**/ios/**/profile
+magic_world_module/**/ios/**/xcuserdata
+magic_world_module/**/ios/.generated/
+magic_world_module/**/ios/Flutter/.last_build_id
+magic_world_module/**/ios/Flutter/App.framework
+magic_world_module/**/ios/Flutter/Flutter.framework
+magic_world_module/**/ios/Flutter/Flutter.podspec
+magic_world_module/**/ios/Flutter/Generated.xcconfig
+magic_world_module/**/ios/Flutter/ephemeral
+magic_world_module/**/ios/Flutter/app.flx
+magic_world_module/**/ios/Flutter/app.zip
+magic_world_module/**/ios/Flutter/flutter_assets/
+magic_world_module/**/ios/Flutter/flutter_export_environment.sh
+magic_world_module/**/ios/ServiceDefinitions.json
+magic_world_module/**/ios/Runner/GeneratedPluginRegistrant.*
+
+# Exceptions to above rules.
+!magic_world_module/**/ios/**/default.mode1v3
+!magic_world_module/**/ios/**/default.mode2v3
+!magic_world_module/**/ios/**/default.pbxuser
+!magic_world_module/**/ios/**/default.perspectivev3

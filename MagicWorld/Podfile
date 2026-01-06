@@ -1,0 +1,49 @@
+platform :ios, '13.0'
+
+inhibit_all_warnings!
+target 'MagicWorld' do
+  
+  flutter_application_path = '../magic_world_module'
+  load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+  
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  
+  install_all_flutter_pods(flutter_application_path)
+  
+  pod 'ReachabilitySwift'
+  pod 'Then'
+  pod 'Moya'
+  pod 'SnapKit'
+  pod 'SmartCodable'
+  pod 'Toast-Swift'
+  pod 'IQKeyboardManagerSwift'
+  pod 'BRPickerView'
+  pod 'CryptoSwift'
+  pod 'SwiftyJSON'
+  pod 'BRPickerView'
+  pod 'SVProgressHUD'
+  pod "dsBridge"
+  pod 'Adjust'
+  pod 'FirebaseAnalytics'
+  pod 'FirebaseCrashlytics'
+  pod 'FirebaseMessaging'
+  pod 'FirebaseDatabase'
+  pod 'FBSDKCoreKit'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'Kingfisher'
+  
+  post_install do |installer|
+    
+    flutter_post_install(installer) if defined?(flutter_post_install)
+    
+    installer.generated_projects.each do |project|
+      project.targets.each do |target|
+        target.build_configurations.each do |config|
+          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+        end
+      end
+    end
+  end
+end
