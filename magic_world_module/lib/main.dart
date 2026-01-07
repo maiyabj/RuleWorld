@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:magic_world_module/native_ffi.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,6 +29,7 @@ class _MyAppState extends State<MyApp> {
     _navigationChannel.setMethodCallHandler((call) async {
       if (call.method == "navigateTo") {
         final String? routeName = call.arguments['routeName'];
+
         final Map<String, dynamic>? arguments =
             call.arguments['arguments'] != null
             ? Map<String, dynamic>.from(call.arguments['arguments'])
